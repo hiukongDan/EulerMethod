@@ -7,7 +7,7 @@ class EulerMethod:
         
     def plot(self, stop, step):
         dot = self.init
-        while dot[0] < stop:
+        while dot[0] <= stop:
             print("(%d,%d)"%(dot[0],dot[1]))
             slope = self.func(dot[0], dot[1])
             dot[1] = dot[1] + slope * step
